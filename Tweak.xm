@@ -10,7 +10,7 @@ BOOL allowLaunch;
 	if (allowLaunch) {
 		%orig;
 	} else {
-		UIAlertView *launchView = [[UIAlertView alloc] initWithTitle:@"Badge Clear or Launch?" message:@"Make sure the Custom Label option is on in the Settings" delegate:self cancelButtonTitle:@"Dismiss" otherButtonTitles:@"Clear", @"Launch", nil];
+		UIAlertView *launchView = [[UIAlertView alloc] initWithTitle:@"Badge Clear or Launch?" message:nil delegate:self cancelButtonTitle:@"Dismiss" otherButtonTitles:@"Clear", @"Launch", nil];
 		[launchView show];
 		[launchView release];
 	}
